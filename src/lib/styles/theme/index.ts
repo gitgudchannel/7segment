@@ -1,5 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
-import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
+import { mode } from "@chakra-ui/theme-tools";
 
 import { config } from "./config";
 
@@ -13,7 +13,7 @@ export const theme = extendTheme({
     // }
   },
   styles: {
-    global: (props: Record<string, any> | StyleFunctionProps) => ({
+    global: (props: Record<string, any>) => ({
       body: {
         bg: mode("#99ffdf", "#121412"),
         bgGradient: mode(
