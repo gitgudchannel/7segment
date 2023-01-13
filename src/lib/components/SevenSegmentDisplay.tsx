@@ -113,7 +113,7 @@ export default function SevenSegmentDisplay({
         gridGap=""
       >
         <GridItem
-          pt="2"
+          pt={[10, 7, 4, 2, 2]}
           colStart={2}
           colEnd={2}
           rowSpan={1}
@@ -147,7 +147,7 @@ export default function SevenSegmentDisplay({
             transition="0.2s ease-in"
           />
         </GridItem>
-        <GridItem py="1" colStart={2} colEnd={2} rowStart={3}>
+        <GridItem py={[3, 3, 2, 1, 1]} colStart={2} colEnd={2} rowStart={3}>
           <Flex
             borderRadius={35}
             bg={decoder[number].d ? color : bgColor}
@@ -174,7 +174,7 @@ export default function SevenSegmentDisplay({
             transition="0.2s ease-in"
           />
         </GridItem>
-        <GridItem pb="2" colStart={2} colEnd={2} rowStart={5}>
+        <GridItem pb={[10, 7, 4, 2, 2]} colStart={2} colEnd={2} rowStart={5}>
           <Flex
             borderRadius={35}
             bg={decoder[number].g ? color : bgColor}

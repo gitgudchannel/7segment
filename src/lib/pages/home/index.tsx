@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const time = dayjs().format("HHMMss");
+      const time = dayjs().format("HHmmss");
       const timeArr = [...time];
       const timeNumArr = timeArr.map((n) => parseInt(n, 10));
       setNums(timeNumArr);
